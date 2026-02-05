@@ -47,7 +47,7 @@ The **XGBoost** model was selected for final deployment.
 
 
 ## 📂 File Structure
-* `customer_churn_analysis.ipynb`: Full EDA, preprocessing, and modeling pipeline.
+* `bank-customer-churn.ipynb`: Full EDA, preprocessing, and modeling pipeline.
 * `churn_modelling.csv`: Raw banking dataset.
 * `bank_churn_xgb_model.pkl`: The saved XGBoost model file.
 * `standard_scaler.pkl`: Saved scaler for production data normalization.
@@ -63,4 +63,4 @@ model = joblib.load('bank_churn_xgb_model.pkl')
 scaler = joblib.load('standard_scaler.pkl')
 
 # New customer data needs to be scaled before prediction
-# prediction = model.predict(X_new_scaled)
+prediction = model.predict(X_new_scaled)
